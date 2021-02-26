@@ -4,6 +4,15 @@
 
 ## 興趣
   98
+  
+```c
+#include<stdio.h>
+int main()
+{
+  printf("Hello World");
+  
+ }
+
 
 ## activity
   
