@@ -2,80 +2,57 @@
 
 ## My first personal website !
 
-## 興趣
-  98
-  
-```c
-#include<stdio.h>
+## 第2次作業
+#include <stdio.h>
 int main()
 {
-  printf("Hello World");
-  return 0;
-}
- 
-```
-## 第一次作業
-#include<stdio.h>
-int main()
-{
-	int m;
-	scanf("%d",&m);
+	int a[1000];
+	int n=0;
 	
-	printf("%d=50*%d+5*%d+1*%d\n",m ,m/50 ,m%50/5,m%5);
-}
-#include<stdio.h>
-int main()
-{
-	int n;
-	scanf("%d",&n);
-	
-	int ans=0;
+	for(int i=0; i<1000; i++){
+		scanf("%d",&a[i]);
 		
-	for(int t=1; t<=n; t++){
-		if ( n % t ==0)
-		ans=ans+1;
+		if( a[i]==0 ){
+			n=i;
+			break;
+		}
 	}
 	
-	printf("%d\n",ans);
+	for(int i=n-1; i>=0; i--){
+		printf("%d ",a[i]);
+	}
+	printf("\n");
 }
-#include<stdio.h>
-int main()
+#include <stdio.h>
+int MYPOWER(int a,int b)
 {
-	int a[10];
-	int ans=0;
-	
-	for(int i=0; i<10; i++){
-		scanf("%d", &a[i]);
-		if(a[i]%3==0) ans = ans + 1 ;
-		}
-	
-	printf("%d\n",ans);
+	int ans=1;
+	for(int i=1; i<=b; i++){
+		ans=ans*a;
+	}
+	return ans;
 }
-#include<stdio.h>
-int main()
+int main(void)
 {
-	int n;
-	scanf("%d",&n);
-	
-	if ( n>=90 ) printf("A\n");
-	else if( n>=80 && n<90 ) printf("B\n");
-	else if( n>=60 && n<80 ) printf("C\n");
-	else printf("F\n");
+	int a,b;
+	scanf("%d%d",&a,&b);
+	printf("[%d]",MYPOWER(a,b));
+	return 0;
 }
 #include <stdio.h>
 int main()
 {
-	int a,b;
-	scanf("%d%d",&a ,&b);
+	int n;
+	scanf("%d",&n);
 	
 	int ans=0;
+	int r=0;
 	
-	
-	for(int i=1; i<=b; i++){
-		if( a%i==0 && b%i==0)ans=i;
+	for(int i=1; i<=n; i++){
+		r=(i-1)*i;
+		ans=ans+r;
 	}
-	
-	printf("%d %d\n",a/ans,b/ans);
+	printf("%d\n",ans);
 }
 
 ## activity
