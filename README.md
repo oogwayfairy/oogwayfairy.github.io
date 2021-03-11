@@ -1,4 +1,5 @@
 ## 第壹題 讀入整數反序列印
+```c++
 #include <stdio.h>
 int main()
 {
@@ -19,6 +20,7 @@ int main()
 	}
 	printf("\n");
 }
+```
 ## 第貳題 A的B次方函數 
 ```c++
 #include <stdio.h>
@@ -39,6 +41,7 @@ int main(void)
 }
 ```
 ## 第叁題 漸增數列相加
+```c++
 #include <stdio.h>
 int main()
 {
@@ -54,7 +57,9 @@ int main()
 	}
 	printf("%d\n",ans);
 }
+```
 ## 第肆題 判別正方形
+```c++
 #include <stdio.h>
 int main()
 {
@@ -66,7 +71,9 @@ int main()
 	if(a==b)printf(" It is a square ");
 	else printf(" It is not a square ");
 }
+```
 ## 第伍題 2進位轉10進位
+```c++
 #include <stdio.h>
 int main()
 {
@@ -76,7 +83,9 @@ int main()
 
 	printf("%d\n",a/1000*8+a%1000/100*4+a%100/10*2+a%10);
 }
+```
 ## 第陸題 均標與前標計算
+```c++
 #include <stdio.h>
 int main()
 {
@@ -107,4 +116,4 @@ int main()
 	}
 	printf("前標:%.1f\n",avg/h);
 }	
-
+```
