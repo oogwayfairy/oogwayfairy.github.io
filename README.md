@@ -20,7 +20,7 @@ int main()
 	printf("\n");
 }
 ## 第貳題 A的B次方函數 
-'''c++
+```c++
 #include <stdio.h>
 int MYPOWER(int a,int b)
 {
@@ -37,7 +37,7 @@ int main(void)
 	printf("[%d]",MYPOWER(a,b));
 	return 0;
 }
-'''
+```
 ## 第叁題 漸增數列相加
 #include <stdio.h>
 int main()
